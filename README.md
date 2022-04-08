@@ -21,3 +21,7 @@ distribution.
 We want to use the FIGER (Ling and Weld, 2012) dataset for this research. It uses a two-stage process, with the first phase detecting entity references and the second step categorizing those instances. We explored the Github repository offered in the FIGER paper for obtaining the dataset, but the data
 appears to be encoded in Protobuffer, making it unusable at this time, therefore we extracted the dataset from one of the cited papers [(Abhishek
 et al., 2019)](https://arxiv.org/abs/1904.13178), where the authors released the FIGER dataset in JSON format. 
+
+# Results
+
+![](/results.png)
