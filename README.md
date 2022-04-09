@@ -22,6 +22,57 @@ We want to use the FIGER (Ling and Weld, 2012) dataset for this research. It use
 appears to be encoded in Protobuffer, making it unusable at this time, therefore we extracted the dataset from one of the cited papers [(Abhishek
 et al., 2019)](https://arxiv.org/abs/1904.13178), where the authors released the FIGER dataset in JSON format. 
 
+# Environment
+
+* OS: CentOS 7
+
+* CUDA version: cuda 10
+
+* GPU stat: GeForce RTX 2080 (X4)
+
+* libraries
+1. Keras : `pip install keras`
+2. GloVE : `pip install glove_python` 
+3. Thunder SVM (support vector machine with gpu): `pip install thundersvm-cuda10`
+
+# How to run Codes
+
+Please download the dataset first from here: [Dataset](https://www.example.com).
+Also, if you don't have GPU envirionment, executing the model for MFT and entire dataset will take you more than 2 days. Therefore, we strongly recommend you to run the code for MFT and entire dataset on a machine has GPU envirionment.
+
+## Word2Vec
+* Location: Code/Word2Vec
+
+* LFT: You can run the code step by step from jupyter notebook named **SVM-Word2Vec (LFT).ipynb**
+
+* MFT & All dataset:
+1) Global MFT: `python svm_word2vec.py --data ../../Dataset/global_MFT_dataset.csv --emb ../../Dataset/global_MFT.pickle --cg 'global coarse grained'`
+2) Local MFT: `python svm_word2vec.py --data ../../Dataset/Local_MFT_dataset.csv --emb ../../Dataset/Local_MFT.pickle --cg coarse_grain`
+3) Global entire data: `python svm_word2vec.py --data ../../Dataset/Local_database_figer.csv  --emb ../../Dataset/allDataEntity.pickle --cg coarse_grain`
+4) Local entire data: `python svm_word2vec.py --data ../../Dataset/global_database_figer.csv --emb ../../Dataset/allDataEntity.pickle --cg 'global coarse grained'`
+
+## GloVE
+* Location: Code/GloVE
+
+* Global: You can run the code step by step from jupyter notebook named **SVM(glove)_global.ipynb**
+
+* Local: You can run the code step by step from jupyter notebook named **SVM(glove)_local.ipynb**
+
+## ConceptNet
+* Location: Code/ConceptNet
+
+* LFT: 
+
+* MFT & All dataset:
+1) Global MFT: `python svm_conceptnet_Global.py`
+2) Local MFT: `python svm_conceptnet_Local.py`
+3) Global entire data: Please edit the code for entire data and run `python svm_conceptnet_Global.py`
+4) Local entire data: Please edit the code for entire data and run `python svm_conceptnet_Local.py`
+
 # Results
 
 ![](/results.png)
+
+# Email us!
+
+If you have any question, or if the codes doesn't work, please let us know through email: sohyun2@ualberta.ca
