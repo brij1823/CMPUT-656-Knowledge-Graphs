@@ -31,9 +31,9 @@ et al., 2019)](https://arxiv.org/abs/1904.13178), where the authors released the
 * GPU stat: GeForce RTX 2080 (X4)
 
 * libraries
-1. Keras : pip install keras
-2. GloVE : pip install glove_python 
-3. Thunder SVM (support vector machine with gpu): pip install thundersvm-cuda10
+1. Keras : `pip install keras`
+2. GloVE : `pip install glove_python` 
+3. Thunder SVM (support vector machine with gpu): `pip install thundersvm-cuda10`
 
 # How to run Codes
 
