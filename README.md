@@ -62,6 +62,8 @@ If you don't have GPU envirionment, executing the model for MFT and entire datas
 * Location: Code/ConceptNet
 
 * LFT: 
+1) Global: You can run the code step by step from jupyter notebook named **Global LFT.ipynb**
+2) Local: You can run the code step by step from jupyter notebook named **Local LFT.ipynb**
 
 * MFT & All dataset:
 1) Global MFT: `python svm_conceptnet_Global.py`
