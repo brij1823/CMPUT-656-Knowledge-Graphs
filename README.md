@@ -37,8 +37,8 @@ et al., 2019)](https://arxiv.org/abs/1904.13178), where the authors released the
 
 # How to run Codes
 
-Please download the dataset first from here: [Dataset](https://www.example.com).
-Also, if you don't have GPU envirionment, executing the model for MFT and entire dataset will take you more than 2 days. Therefore, we strongly recommend you to run the code for MFT and entire dataset on a machine has GPU envirionment.
+Please download the dataset first from here: [Dataset](https://drive.google.com/file/d/16ggwuafU_uDvMKx_NOQRnTvl0tcA9OX-/view?usp=sharing). Unzip the file in the directory. Since we provide pickle files to save your time for data preprocessing, the directory size is almost 10GB.
+If you don't have GPU envirionment, executing the model for MFT and entire dataset will take you more than 2 days. Therefore, **we strongly recommend you to run the code for MFT and entire dataset on a machine has GPU envirionment.**
 
 ## Word2Vec
 * Location: Code/Word2Vec
@@ -48,8 +48,8 @@ Also, if you don't have GPU envirionment, executing the model for MFT and entire
 * MFT & All dataset:
 1) Global MFT: `python svm_word2vec.py --data ../../Dataset/global_MFT_dataset.csv --emb ../../Dataset/global_MFT.pickle --cg 'global coarse grained'`
 2) Local MFT: `python svm_word2vec.py --data ../../Dataset/Local_MFT_dataset.csv --emb ../../Dataset/Local_MFT.pickle --cg coarse_grain`
-3) Global entire data: `python svm_word2vec.py --data ../../Dataset/Local_database_figer.csv  --emb ../../Dataset/allDataEntity.pickle --cg coarse_grain`
-4) Local entire data: `python svm_word2vec.py --data ../../Dataset/global_database_figer.csv --emb ../../Dataset/allDataEntity.pickle --cg 'global coarse grained'`
+3) Global entire data: `python svm_word2vec.py --data ../../Dataset/global_database_figer.csv --emb ../../Dataset/allDataEntity.pickle --cg 'global coarse grained'`
+5) Local entire data: `python svm_word2vec.py --data ../../Dataset/Local_database_figer.csv  --emb ../../Dataset/allDataEntity.pickle --cg coarse_grain`
 
 ## GloVE
 * Location: Code/GloVE
