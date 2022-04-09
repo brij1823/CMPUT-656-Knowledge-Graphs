@@ -72,3 +72,7 @@ Also, if you don't have GPU envirionment, executing the model for MFT and entire
 # Results
 
 ![](/results.png)
+
+# Email us!
+
+If you have any question, or if the codes doesn't work, please let us know through email: sohyun2@ualberta.ca
